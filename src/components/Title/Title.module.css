@@ -1,1 +1,10 @@
- ;
+.container {
+  display: grid;
+  align-items: center;
+  padding-left: 2rem;
+  font-weight: 500;
+  font-size: 1.2rem;
+  height: 4rem;
+  width: 100%;
+  background-color: rgb(218, 218, 218);
+}
