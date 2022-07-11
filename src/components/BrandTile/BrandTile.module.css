@@ -1,1 +1,13 @@
- ;
+.container {
+  display: grid;
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  place-items: center;
+  border-radius: 0.25rem;
+  border: var(--default-border);
+}
+
+.img {
+  width: 80%;
+}
