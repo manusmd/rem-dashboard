@@ -1,7 +1,9 @@
+import Title from "../../components/Title/Title";
+
 export default function AccountUsers(): JSX.Element {
   return (
     <>
-      <h1>AccountUsers</h1>
+      <Title title="Users" />
     </>
   );
 }
