@@ -17,20 +17,40 @@
       "logo": "https://cdn-0.generatormix.com/images/brand/american-express.jpg"
     },
     {
-      "name": "Discover",
-      "logo": "https://cdn-0.generatormix.com/images/brand/discover.jpg"
+      "name": "Toyota Motor Corporation",
+      "logo": "https://cdn-0.generatormix.com/images/brand/toyota-motor-corporation.jpg"
     },
     {
-      "name": "Diners Club",
-      "logo": "https://cdn-0.generatormix.com/images/brand/diners-club.jpg"
+      "name": "Total",
+      "logo": "https://cdn-0.generatormix.com/images/brand/total.jpg"
     },
     {
-      "name": "JCB",
-      "logo": "https://cdn-0.generatormix.com/images/brand/jcb.jpg"
+      "name": "IBM",
+      "logo": "https://www.generatormix.com/images/brand/ibm.jpg"
     },
     {
-      "name": "Maestro",
-      "logo": "https://cdn-0.generatormix.com/images/brand/maestro.jpg"
+      "name": "Citigroup",
+      "logo": "https://www.generatormix.com/images/brand/citigroup.jpg"
+    },
+    {
+      "name": "Vodafone",
+      "logo": "https://www.generatormix.com/images/brand/vodafone.jpg"
+    },
+    {
+      "name": "Siemens",
+      "logo": "https://www.generatormix.com/images/brand/siemens-ag.jpg"
+    },
+    {
+      "name": "MTV",
+      "logo": "https://www.generatormix.com/images/brand/mtv.jpg"
+    },
+    {
+      "name": "Apple",
+      "logo": "https://www.generatormix.com/images/brand/apple-inc..jpg"
+    },
+    {
+      "name": "Nintendo",
+      "logo": "https://www.generatormix.com/images/brand/nintendo.jpg"
     }
   ]
 }
