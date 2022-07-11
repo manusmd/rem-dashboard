@@ -1,7 +1,7 @@
-export default function AccountUsers(): JSX.Element {
+export default function MonitoringContent(): JSX.Element {
   return (
     <>
-      <h1>AccountUsers</h1>
+      <h1>MonitoringContent</h1>
     </>
   );
 }
