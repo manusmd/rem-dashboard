@@ -4,6 +4,7 @@
   justify-content: space-between;
   padding: 1rem;
   border-bottom: var(--default-border);
+  background-color: white;
 }
 
 .logoWrapper {
