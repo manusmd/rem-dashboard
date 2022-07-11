@@ -1,0 +1,20 @@
+.btnPrimary,
+.btnSecondary {
+  border: none;
+  border-radius: 1rem;
+  padding: 0.5rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.btnPrimary {
+  background-color: orange;
+  color: white;
+  width: 85%;
+}
+.btnSecondary {
+  border: var(--default-border);
+  background-color: white;
+  color: black;
+  width: 75%;
+}
