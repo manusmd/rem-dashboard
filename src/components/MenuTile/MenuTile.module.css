@@ -1,1 +1,18 @@
- ;
+.container {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  gap: 1rem;
+  font-size: 0.75rem;
+  width: 100%;
+}
+
+.links {
+  font-weight: 500;
+  text-decoration: none;
+  color: black;
+}
+
+.links:hover {
+  color: orange;
+}
