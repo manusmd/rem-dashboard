@@ -2,7 +2,6 @@
   display: grid;
   grid-template-columns: min-content 1fr min-content;
   height: 3rem;
-  background-color: rgb(241, 241, 241);
   place-items: center;
   padding: 0 2rem;
 }
