@@ -1,3 +1,5 @@
+import { useState } from "react";
+import MenuTile from "../MenuTile/MenuTile";
 import styles from "./BrandTile.module.css";
 
 export type BrandTileProps = {
@@ -9,10 +11,23 @@ export default function BrandTile({
   logo: img,
   name,
 }: BrandTileProps): JSX.Element {
+  const [isHover, setIsHover] = useState(false);
+
   return (
-    <div className={styles.container}>
-      <img className={styles.img} src={img} />
-      <span className={styles.brandName}>{name}</span>
+    <div
+      key={name}
+      className={styles.container}
+      onMouseEnter={() => setIsHover(true)}
+      onMouseLeave={() => setIsHover(false)}
+    >
+      {!isHover ? (
+        <>
+          <img className={styles.img} src={img} />
+          <span className={styles.brandName}>{name}</span>
+        </>
+      ) : (
+        <MenuTile />
+      )}
     </div>
   );
 }
