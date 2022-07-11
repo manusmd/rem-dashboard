@@ -1,0 +1,36 @@
+{
+  "brands": [
+    {
+      "name": "Corona",
+      "logo": "https://cdn-0.generatormix.com/images/brand/corona.jpg"
+    },
+    {
+      "name": "MasterCard",
+      "logo": "https://cdn-0.generatormix.com/images/brand/mastercard.jpg"
+    },
+    {
+      "name": "Visa",
+      "logo": "https://cdn-0.generatormix.com/images/brand/visa.jpg"
+    },
+    {
+      "name": "American Express",
+      "logo": "https://cdn-0.generatormix.com/images/brand/american-express.jpg"
+    },
+    {
+      "name": "Discover",
+      "logo": "https://cdn-0.generatormix.com/images/brand/discover.jpg"
+    },
+    {
+      "name": "Diners Club",
+      "logo": "https://cdn-0.generatormix.com/images/brand/diners-club.jpg"
+    },
+    {
+      "name": "JCB",
+      "logo": "https://cdn-0.generatormix.com/images/brand/jcb.jpg"
+    },
+    {
+      "name": "Maestro",
+      "logo": "https://cdn-0.generatormix.com/images/brand/maestro.jpg"
+    }
+  ]
+}
