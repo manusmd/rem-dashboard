@@ -1,5 +1,27 @@
 .container {
   grid-area: footer;
-  position: fixed;
+  position: absolute;
   bottom: 0;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: gray;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.copyright {
+  padding-left: 2rem;
+}
+
+.footerLinks {
+  text-decoration: none;
+  color: gray;
+}
+
+.footerLinks:last-child {
+  padding-right: 2rem;
 }
