@@ -2,7 +2,8 @@
   display: grid;
   grid-template-areas:
     "topbar topbar"
-    "nav content";
-  grid-template-columns: 30rem 1fr;
+    "nav content"
+    "footer footer";
+  grid-template-columns: max-content 1fr;
   grid-template-rows: auto 1fr;
 }

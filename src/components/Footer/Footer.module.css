@@ -1,1 +1,5 @@
- ;
+.container {
+  grid-area: footer;
+  position: fixed;
+  bottom: 0;
+}

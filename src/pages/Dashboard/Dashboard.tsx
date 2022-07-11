@@ -1,7 +1,9 @@
-export default function ContentManagement(): JSX.Element {
+import styles from "./Dashboard.module.css";
+
+export default function Dashboard(): JSX.Element {
   return (
-    <>
-      <h1>ContentManagement</h1>
-    </>
+    <div className={styles.container}>
+      <h1>Dashboard</h1>
+    </div>
   );
 }
