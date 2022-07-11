@@ -1,8 +1,9 @@
-import { useState } from "react";
+import { useState, useMemo, useEffect } from "react";
 import styles from "./Searchbar.module.css";
 import GridViewSharpIcon from "@mui/icons-material/GridViewSharp";
 import TableRowsIcon from "@mui/icons-material/TableRows";
 import SearchIcon from "@mui/icons-material/Search";
+import debounce from "lodash.debounce";
 
 type SearchbarProps = {
   inputCallback: (value: string) => void;
@@ -13,9 +14,18 @@ export default function Searchbar({
 }: SearchbarProps): JSX.Element {
   const [filter, setFilter] = useState("");
 
-  function onChangeHandler(event: React.ChangeEvent<HTMLInputElement>): void {
+  useEffect(() => {
+    return () => {
+      debouncedResults.cancel();
+    };
+  });
+
+  const debouncedResults = useMemo(() => {
+    return debounce(handleChange, 300);
+  }, []);
+
+  function handleChange(event: React.ChangeEvent<HTMLInputElement>): void {
     inputCallback(event.target.value);
-    console.log(event.target.value);
   }
 
   return (
@@ -29,7 +39,7 @@ export default function Searchbar({
           className={styles.searchInput}
           type="text"
           placeholder="Search brands..."
-          onChange={onChangeHandler}
+          onChange={debouncedResults}
         />
         <SearchIcon />
       </div>
