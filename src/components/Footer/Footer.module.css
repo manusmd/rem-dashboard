@@ -1,6 +1,7 @@
 .container {
   grid-area: footer;
   position: absolute;
+  border-top: var(--default-border);
   bottom: 0;
   font-size: 0.75rem;
   font-weight: 500;
