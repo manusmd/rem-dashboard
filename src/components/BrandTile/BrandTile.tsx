@@ -8,10 +8,7 @@ export type BrandTileProps = {
   name: string;
 };
 
-export default function BrandTile({
-  logo: img,
-  name,
-}: BrandTileProps): JSX.Element {
+export default function BrandTile({ logo, name }: BrandTileProps): JSX.Element {
   const [isHover, setIsHover] = useState(false);
 
   return (
@@ -21,7 +18,7 @@ export default function BrandTile({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
-      <img className={styles.img} src={img} />
+      <img className={styles.img} src={logo} />
       <span className={styles.brandName}>{name}</span>
 
       <AnimatePresence key="menuTiles">
@@ -32,7 +29,7 @@ export default function BrandTile({
             animate={{ opacity: 1, backdropFilter: "blur(10px)" }}
             exit={{ opacity: 0 }}
           >
-            <MenuTile />
+            <MenuTile layout={"grid"} />
           </motion.div>
         )}
       </AnimatePresence>
