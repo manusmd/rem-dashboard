@@ -13,6 +13,7 @@ export default function Button({
 }: ButtonProps): JSX.Element {
   return (
     <button
+      onClick={onClick}
       className={type === "primary" ? styles.btnPrimary : styles.btnSecondary}
     >
       {text}
