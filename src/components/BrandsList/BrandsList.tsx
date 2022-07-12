@@ -4,9 +4,13 @@ import { motion, AnimatePresence } from "framer-motion";
 
 type BrandsListProps = {
   items: Array<BrandTileProps>;
+  layout: string;
 };
 
-export default function BrandsList({ items }: BrandsListProps): JSX.Element {
+export default function BrandsList({
+  items,
+  layout,
+}: BrandsListProps): JSX.Element {
   return (
     <AnimatePresence key="brands">
       <div className={styles.container}>
