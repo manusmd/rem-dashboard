@@ -8,7 +8,7 @@ import { BrandTileProps } from "../../components/BrandTile/BrandTile";
 export default function Dashboard(): JSX.Element {
   const [search, setSearch] = useState("");
   const [brands, setBrands] = useState([]);
-  const [layout, setLayout] = useState("");
+  const [layout, setLayout] = useState("grid");
 
   const API_BRANDS = `http://localhost:3001/brands?name_like=${search}`;
 
