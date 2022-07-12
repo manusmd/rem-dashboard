@@ -10,7 +10,7 @@ This app is part of a frontend coding challenge
 - JSON Server
 - Framer Motion
 
-Why I choose which technologies:
+Why I chose which technologies:
 
 ### React
 
@@ -36,14 +36,40 @@ Framer Motion is a library for smooth transitions and animations. I worked a few
 
 ## Start App
 
-To start the app you shoul start the api first:
+### Prerequisites to start the app:
 
-```
-npm run api-server
-```
+- Git
+- Node & npm
 
-Then you can start the vite app:
+### Steps to start the app:
 
-```
-npm run dev
-```
+1. Clone the repository
+
+   With ssh:
+
+   ```
+   git clone git@github.com:manusmd/rem-dashboard.git
+   ```
+
+   OR with http:
+
+   ```
+   git clone https://github.com/manusmd/rem-dashboard.git
+   ```
+
+2. Install the node packages:
+
+   ```
+   npm i
+   ```
+
+3. Then start the brands api:
+
+   ```
+   npm run api-server
+   ```
+
+4. Start the app:
+   ```
+   npm run dev
+   ```
