@@ -8,6 +8,7 @@ import { BrandTileProps } from "../../components/BrandTile/BrandTile";
 export default function Dashboard(): JSX.Element {
   const [search, setSearch] = useState("");
   const [brands, setBrands] = useState([]);
+  const [layout, setLayout] = useState("");
 
   const API_BRANDS = `http://localhost:3001/brands?name_like=${search}`;
 
@@ -26,8 +27,8 @@ export default function Dashboard(): JSX.Element {
   return (
     <div className={styles.container}>
       <Title title="Brands" />
-      <Searchbar inputCallback={setSearch} />
-      <BrandsList items={brands} />
+      <Searchbar layoutCallback={setLayout} inputCallback={setSearch} />
+      <BrandsList layout={layout} items={brands} />
     </div>
   );
 }

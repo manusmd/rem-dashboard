@@ -4,3 +4,10 @@
   flex-wrap: wrap;
   gap: 1rem;
 }
+
+.layoutList {
+  display: flex;
+  flex-direction: column;
+  padding: 0 2rem 1rem;
+  gap: 1rem;
+}

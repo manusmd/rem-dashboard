@@ -5,15 +5,17 @@ import TableRowsIcon from "@mui/icons-material/TableRows";
 import SearchIcon from "@mui/icons-material/Search";
 import debounce from "lodash.debounce";
 
+/*In this case, the searchbar is just used for the brand search. That's why it isn't really reusable now.*/
+
 type SearchbarProps = {
   inputCallback: (value: string) => void;
+  layoutCallback: (value: string) => void;
 };
 
 export default function Searchbar({
   inputCallback,
+  layoutCallback,
 }: SearchbarProps): JSX.Element {
-  const [filter, setFilter] = useState("");
-
   useEffect(() => {
     return () => {
       debouncedResults.cancel();
@@ -44,8 +46,18 @@ export default function Searchbar({
         <SearchIcon />
       </div>
       <div className={styles.layoutSelector}>
-        <GridViewSharpIcon />
-        <TableRowsIcon />
+        <div
+          className={styles.layoutItem}
+          onClick={() => layoutCallback("grid")}
+        >
+          <GridViewSharpIcon />
+        </div>
+        <div
+          className={styles.layoutItem}
+          onClick={() => layoutCallback("list")}
+        >
+          <TableRowsIcon />
+        </div>
       </div>{" "}
     </div>
   );

@@ -1,10 +1,14 @@
 import Button from "../Button/Button";
 import styles from "./MenuTile.module.css";
 
-export default function MenuTile(): JSX.Element {
+type MenuTileProps = {
+  layout: "list" | "grid";
+};
+
+export default function MenuTile({ layout }: MenuTileProps): JSX.Element {
   //This component just mocks a menu tile. There is no functionality!
   return (
-    <div className={styles.container}>
+    <div className={layout === "grid" ? styles.container : styles.listMenu}>
       <a className={styles.links} href="">
         All phases
       </a>
