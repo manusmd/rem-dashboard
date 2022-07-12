@@ -21,17 +21,15 @@ export default function BrandTile({
       onMouseEnter={() => setIsHover(true)}
       onMouseLeave={() => setIsHover(false)}
     >
+      <img className={styles.img} src={img} />
+      <span className={styles.brandName}>{name}</span>
+
       <AnimatePresence key="menuTiles">
-        {!isHover ? (
-          <>
-            <img className={styles.img} src={img} />
-            <span className={styles.brandName}>{name}</span>
-          </>
-        ) : (
+        {isHover && (
           <motion.div
             className={styles.menuContainer}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
+            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
+            animate={{ opacity: 1, backdropFilter: "blur(10px)" }}
             exit={{ opacity: 0 }}
           >
             <MenuTile />
