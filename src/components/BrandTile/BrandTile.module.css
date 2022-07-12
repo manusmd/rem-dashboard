@@ -6,6 +6,7 @@
   place-items: center;
   border-radius: 0.25rem;
   border: var(--default-border);
+  box-shadow: 1px -1px 6px 0 rgba(0, 0, 0, 0.151);
 }
 
 .img {
