@@ -5,12 +5,24 @@ This app is part of a frontend coding challenge
 ## Technologies
 
 - React
-- TypeScript
 - Vite
+- TypeScript
 - JSON Server
 - Framer Motion
 
-Besides of the basic technologies like react, typescript and vite I used some additional tools or libraries:
+Why I choose which technologies:
+
+### React
+
+I chose React because I really like how easy the DOM manipulation in react is. Furthermore I started in web development with react in September 2021 and that's why it is my favourite choice.
+
+### Vite
+
+I chose Vite because of the high performance and because you can set it up really quick. Also it was part of my react learning journey. Vite just feels a little bit more modern in comparison to create-react-app.
+
+### TypeScript
+
+I used TypeScript because I think it's a huge help when working with objects and many different types of variables. If there is any bug in your app you can immediately exclude the type of an variable as an error source because you just have to do it the right way while developing.
 
 ### JSON Server
 
