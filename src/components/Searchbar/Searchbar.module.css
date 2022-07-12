@@ -3,7 +3,7 @@
   grid-template-columns: min-content 1fr min-content;
   height: 3rem;
   place-items: center;
-  padding-top: 1rem;
+  padding: 1rem 2rem;
 }
 
 .filterSelection {
@@ -42,4 +42,12 @@
 .layoutSelector {
   display: flex;
   color: gray;
+}
+
+.layoutItem {
+  cursor: pointer;
+}
+
+.layoutItem:hover {
+  color: black;
 }

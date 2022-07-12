@@ -46,8 +46,18 @@ export default function Searchbar({
         <SearchIcon />
       </div>
       <div className={styles.layoutSelector}>
-        <GridViewSharpIcon onClick={() => layoutCallback("grid")} />
-        <TableRowsIcon onClick={() => layoutCallback("list")} />
+        <div
+          className={styles.layoutItem}
+          onClick={() => layoutCallback("grid")}
+        >
+          <GridViewSharpIcon />
+        </div>
+        <div
+          className={styles.layoutItem}
+          onClick={() => layoutCallback("list")}
+        >
+          <TableRowsIcon />
+        </div>
       </div>{" "}
     </div>
   );
